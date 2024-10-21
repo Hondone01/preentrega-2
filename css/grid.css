@@ -1,5 +1,3 @@
-
-
 @media (min-width:320px) and (max-width:374px) {
 
     * {
@@ -30,8 +28,11 @@
     }
 
     .grid-container1 {
+        margin-top: 40px;
         width: 300px;
         display: grid;
+
+        justify-content: center;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
@@ -42,10 +43,11 @@
     }
 
     .grid-container1 .div-2 {
+        width: 300px;
         grid-area: item-2;
-        /* background-color: red;*/
         border-radius: 5px;
         display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
     }
@@ -69,7 +71,7 @@
         text-transform: capitalize;
     }
 
-    
+
     .grid-container1 .div-4 {
         margin-top: 15px;
         margin-bottom: 15px;
@@ -103,21 +105,15 @@
     }
 
     .grid-container2 {
-        width: 320px;
-        /* margin: 0px;*/
-        display: grid;
-        grid-template-columns: .5fr .5fr;
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-            " item-1 item-1"
-            " item-2 item-3"
-            " item-4 item-5"
-        ;
-        column-gap: 1px;
+        margin-top: 60px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
     .grid-container2 .div-1 {
+        width: 300px;
         margin-top: 15px;
         margin-bottom: 15px;
         grid-area: item-1;
@@ -139,7 +135,21 @@
         color: black;
     }
 
+    .caja-galeria {
+        width: 300px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            " item-1 item-1"
+            " item-2 item-3"
+            " item-4 item-5"
+        ;
+    }
+
     .grid-container2 .div-2 {
+        width: 140px;
         grid-area: item-2;
         border-radius: 5px;
         display: flex;
@@ -160,6 +170,7 @@
     }
 
     .grid-container2 .div-3 {
+        width: 140px;
         grid-area: item-3;
         border-radius: 5px;
         display: flex;
@@ -180,6 +191,7 @@
     }
 
     .grid-container2 .div-4 {
+        width: 140px;
         grid-area: item-4;
         border-radius: 5px;
         display: flex;
@@ -200,6 +212,7 @@
     }
 
     .grid-container2 .div-5 {
+        width: 140px;
         grid-area: item-5;
         border-radius: 5px;
         display: flex;
@@ -220,17 +233,10 @@
     }
 
     .grid-container3 {
-        width: 320px;
-        display: grid;
-        grid-template-columns: repeat(4, .25fr);
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas:
-            " . item-1 item-1 . "
-            " . item-2 item-2 . "
-            " item-3 item-3 item-4 item-4 "
-            " item-5 item-5 item-6 item-6 "
-        ;
-        column-gap: 1px;
+        margin-top: 60px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
@@ -257,6 +263,8 @@
     }
 
     .grid-container3 .div-2 {
+        width: 140px;
+        height: 100px;
         grid-area: item-2;
         border-radius: 5px;
         display: flex;
@@ -264,9 +272,24 @@
         align-items: center;
     }
 
+    .caja-productos {
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(4, .25fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            " . item-1 item-1 . "
+            " . item-2 item-2 . "
+            " item-3 item-3 item-4 item-4 "
+            " item-5 item-5 item-6 item-6 "
+        ;
+        column-gap: 1px;
+        justify-content: center;
+    }
+
     .grid-container3 .div-2 img {
         max-width: 100%;
-        height: auto;
+        height: 100px;
         display: block;
         border-radius: 5px;
     }
@@ -277,8 +300,9 @@
     }
 
     .grid-container3 .div-3 {
-        padding-left: 10px;
-        padding-right: 5px;
+        margin-top: 30px;
+        width: 140px;
+        height: 100px;
         grid-area: item-3;
         border-radius: 5px;
         display: flex;
@@ -288,7 +312,7 @@
 
     .grid-container3 .div-3 img {
         max-width: 100%;
-        height: auto;
+        height: 100px;
         display: block;
         border-radius: 5px;
     }
@@ -299,8 +323,9 @@
     }
 
     .grid-container3 .div-4 {
-        padding-left: 5px;
-        padding-right: 10px;
+        margin-top: 30px;
+        width: 140px;
+        height: 100px;
         grid-area: item-4;
         border-radius: 5px;
         display: flex;
@@ -310,7 +335,7 @@
 
     .grid-container3 .div-4 img {
         max-width: 100%;
-        height: auto;
+        height: 100px;
         display: block;
         border-radius: 5px;
     }
@@ -321,8 +346,9 @@
     }
 
     .grid-container3 .div-5 {
-        padding-left: 10px;
-        padding-right: 5px;
+        margin-top: 30px;
+        width: 140px;
+        height: 100px;
         grid-area: item-5;
         border-radius: 5px;
         display: flex;
@@ -332,7 +358,7 @@
 
     .grid-container3 .div-5 img {
         max-width: 100%;
-        height: auto;
+        height: 100px;
         display: block;
         border-radius: 5px;
     }
@@ -343,8 +369,9 @@
     }
 
     .grid-container3 .div-6 {
-        padding-left: 5px;
-        padding-right: 10px;
+        margin-top: 30px;
+        width: 140px;
+        height: 100px;
         grid-area: item-6;
         border-radius: 5px;
         display: flex;
@@ -354,7 +381,7 @@
 
     .grid-container3 .div-6 img {
         max-width: 100%;
-        height: auto;
+        height: 100px;
         display: block;
         border-radius: 5px;
     }
@@ -365,14 +392,11 @@
     }
 
     .grid-container4 {
-        width: 320px;
-        display: grid;
-        grid-template-columns: .25fr .20fr .20fr .25fr;
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas:
-            " . item-1 item-1 . "
-            " item-2 item-3 item-3 item-4 "
-        ;
+        margin-top: 60px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .grid-container4 .div-1 {
@@ -381,80 +405,84 @@
         grid-area: item-1;
         border-radius: 5px;
         display: flex;
-        /* flex-direction: column;*/
         align-content: center;
     }
 
     .grid-container4 .div-1 h2 {
-        margin-left: 20px;
         text-align: center;
         font-size: 2rem;
         line-height: 1.2;
-        /*  margin: 0;
-        max-width: 100%;*/
-        /*  overflow-wrap: break-word;*/
         color: black;
     }
 
+    .caja-promo {
+        width: 300px;
+        display: grid;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        grid-template-columns: 75px 75px 75px 75px;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            " . item-1 item-1 . "
+            " item-2 item-3 item-3 item-4 "
+        ;
+    }
+
     .grid-container4 .div-2 {
-        margin-left: 10px;
         margin-top: 10px;
         grid-area: item-2;
         border-radius: 5px;
         display: flex;
-        /*  flex-direction: column;*/
-        /*  align-items: center;*/
     }
 
     .grid-container4 .div-2 p {
+        width: 60px;
         text-align: center;
         color: black;
         font-size: 1rem;
         line-height: 1.5;
         margin: 0;
         max-width: 100%;
-        overflow-wrap: break-word;
+        /* overflow-wrap: break-word;*/
     }
 
     .grid-container4 .div-3 {
-        margin-left: 20px;
-        margin-right: 5px;
+        width: 130px;
         grid-area: item-3;
         border-radius: 5px;
         display: flex;
-        /*  flex-direction: column;
-        align-items: center;*/
+        justify-content: center;
     }
 
     .grid-container4 .div-3 img {
-        width: 120px;
+        max-width: 100%;
         height: 100px;
         display: block;
         border-radius: 5px;
     }
 
     .grid-container4 .div-4 {
-        margin-left: 130px;
         grid-area: item-4;
         border-radius: 5px;
         display: flex;
-        /*   flex-direction: column;
-        align-items: center;*/
     }
 
     .grid-container4 .div-4 p {
+        width: 60px;
         text-align: center;
         color: black;
         font-size: 1rem;
         line-height: 1.5;
         margin: 0;
         max-width: 100%;
-        overflow-wrap: break-word;
+        /*  overflow-wrap: break-word;*/
     }
 
 
     .grid-container5 {
-        width: 320px;
+        margin-top: 60px;
+        width: 300px;
         display: grid;
         grid-template-columns: .5fr 1fr 1fr .5fr;
         grid-template-rows: repeat(3, auto);
@@ -508,8 +536,8 @@
     }
 
     .grid-container5 .div-3 {
-        padding-left: 10px;
-        padding-right: 10px;
+        /* padding-left: 10px;
+        padding-right: 10px;*/
         margin-top: 15px;
         margin-bottom: 15px;
         grid-area: item-3;
@@ -532,16 +560,10 @@
     }
 
     .grid-container6 {
-        width: 320px;
-        display: grid;
-        grid-template-columns: repeat(2, 130px);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-            " item-1 item-1 "
-            " item-2 item-3 "
-            " item-4 item-5 "
-        ;
-        gap: 5px;
+        margin-top: 60px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
@@ -556,8 +578,6 @@
     }
 
     .grid-container6 .div-1 h2 {
-        margin-top: 15px;
-        margin-bottom: 15px;
         text-align: center;
         font-size: 2rem;
         line-height: 1.2;
@@ -568,7 +588,7 @@
     }
 
     .grid-container6 .div-2 {
-        margin-right: 30px;
+        width: 140px;
         grid-area: item-2;
         border-radius: 5px;
         display: flex;
@@ -593,8 +613,21 @@
         overflow-wrap: break-word;
     }
 
+    .caja-calificacion{
+        width: 300px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            " item-1 item-1"
+            " item-2 item-3"
+            " item-4 item-5"
+        ;
+    }
+
     .grid-container6 .div-3 {
-        margin-left: 30px;
+        width: 140px;
         grid-area: item-3;
         border-radius: 5px;
         display: flex;
@@ -620,7 +653,7 @@
     }
 
     .grid-container6 .div-4 {
-        margin-right: 30px;
+        width: 140px;
         grid-area: item-4;
         border-radius: 5px;
         display: flex;
@@ -646,7 +679,7 @@
     }
 
     .grid-container6 .div-5 {
-        margin-left: 30px;
+        width: 140px;
         grid-area: item-5;
         border-radius: 5px;
         display: flex;
@@ -671,7 +704,7 @@
         overflow-wrap: break-word;
     }
 
-    footer .footer1{
+    footer .footer1 {
         display: none;
     }
 
@@ -1082,12 +1115,12 @@
     }
 
     .grid-container4 .div-1 h2 {
-       /* margin-left: 45px;*/
+        /* margin-left: 45px;*/
         font-size: 2rem;
         line-height: 1.2;
         margin: 0;
         max-width: 100%;
-       /* overflow-wrap: break-word;*/
+        /* overflow-wrap: break-word;*/
         color: black;
     }
 
@@ -1364,7 +1397,7 @@
         overflow-wrap: break-word;
     }
 
-    footer .footer1{
+    footer .footer1 {
         display: none;
     }
 
@@ -1445,7 +1478,7 @@
 
     /* Estilo para botones "tienda" y "todos los productos" */
     .grid-container1 .div-2 button {
-       margin-top: 10px;
+        margin-top: 10px;
         padding: 2px;
         color: black;
         font-size: .6rem;
@@ -1920,6 +1953,14 @@
     }
 
     .grid-container6 {
+        margin-top: 60px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .grid-container6 {
         width: 425px;
         display: grid;
         grid-template-columns: 200px 200px;
@@ -2064,7 +2105,7 @@
         overflow-wrap: break-word;
     }
 
-    footer .footer1{
+    footer .footer1 {
         display: none;
     }
 
@@ -2159,8 +2200,8 @@
     *******************************************************************************************************************/
 
     /* Estilo de los links del footer */
-    
-    
+
+
 
     .footer1 {
         list-style: none;
@@ -2184,7 +2225,7 @@
     .footer1 div {
         margin-inline: 50px;
     }
-    
+
 
     .color-footer {
 
@@ -2196,16 +2237,16 @@
     .div-footer1 label {
         justify-content: center;
     }
-    
-    ul .caja-1{
+
+    ul .caja-1 {
         margin-left: 150px;
     }
-    
-    ul .caja-2{
+
+    ul .caja-2 {
         margin-left: 200px;
     }
-    
-    ul .caja-3{
+
+    ul .caja-3 {
         margin-left: 50px;
     }
 
@@ -2224,8 +2265,8 @@
         align-items: center;
 
     }
-    
-    .imagen-footer img{
+
+    .imagen-footer img {
         margin-right: 10px;
     }
 
@@ -2359,7 +2400,7 @@
         color: black;
     }
 
-    .caja-galeria{
+    .caja-galeria {
         display: flex;
         justify-content: center;
         justify-content: space-around;
@@ -2469,7 +2510,7 @@
             "item-2 item-3 item-4 item-5 item-6"
         ;
         gap: 10px;
-        
+
     }
 
     .grid-container3 .div-1 {
@@ -2489,7 +2530,7 @@
         color: black;
     }
 
-    .caja-productos{
+    .caja-productos {
         display: flex;
         justify-content: center;
         justify-content: space-around;
@@ -2779,7 +2820,7 @@
         color: black;
     }
 
-    .caja-calificacion{
+    .caja-calificacion {
         display: flex;
         justify-content: center;
         justify-content: space-around;
@@ -2848,7 +2889,7 @@
         font-size: 1.5rem;
         color: #323232;
     }
-    
+
     .grid-container6 .div-5 {
         width: 250px;
         grid-area: item-5;
@@ -2893,7 +2934,7 @@
     .grid-container7 .div-1 {
         margin-top: 20px;
         grid-area: item-1;
-       /* background-color: #9cb850;*/
+        /* background-color: #9cb850;*/
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -2912,7 +2953,7 @@
         margin-bottom: 10px;
         padding-bottom: 15px;
         grid-area: item-2;
-     /*   background-color: #dd9595;*/
+        /*   background-color: #dd9595;*/
         border: 1px solid grey;
         display: flex;
         justify-content: center;
@@ -2938,7 +2979,7 @@
 
     .grid-container7 .div-3 {
         grid-area: item-3;
-      /*  background-color: #e722cd;*/
+        /*  background-color: #e722cd;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -2959,7 +3000,7 @@
         margin-right: 20px;
         padding-bottom: 10px;
         grid-area: item-4;
-      /* background-color: rgb(4, 248, 77);*/
+        /* background-color: rgb(4, 248, 77);*/
         border: 1px solid gray;
         display: flex;
         flex-direction: column;
@@ -2974,8 +3015,8 @@
         color: #323232;
         font-size: 1rem;
     }
-    
-    .grid-container7 .div-4 button{
+
+    .grid-container7 .div-4 button {
         margin-top: 5px;
         padding: 5px;
         color: black;
@@ -2985,8 +3026,8 @@
         border-radius: 25px;
         text-transform: capitalize;
     }
-    
-    .grid-container7 .div-4 button:hover{
+
+    .grid-container7 .div-4 button:hover {
         background-color: aliceblue;
         transition: 1s;
     }
@@ -2999,20 +3040,20 @@
     .grid-container7 .div-5 {
         margin-right: 20px;
         grid-area: item-5;
-      /*  background-color: rgb(119, 122, 120);*/
+        /*  background-color: rgb(119, 122, 120);*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-    .grid-container7 .div-5 img{
+
+    .grid-container7 .div-5 img {
         margin-top: 10px;
         width: 150px;
         height: auto;
     }
-    
-    .grid-container7 .div-5 label{
+
+    .grid-container7 .div-5 label {
         padding-top: 60px;
         display: flex;
         flex-direction: column;
@@ -3024,7 +3065,7 @@
         /*  margin-left: 15px;*/
         padding-bottom: 15px;
         grid-area: item-6;
-      /* background-color: #f585b4;*/
+        /* background-color: #f585b4;*/
         /*#f1ddd6  equivalente en canva*/
         border: 1px solid grey;
         display: flex;
@@ -3077,7 +3118,7 @@
     .grid-container8 .div-1 {
         margin-top: 20px;
         grid-area: item-1;
-       /* background-color: #9cb850;*/
+        /* background-color: #9cb850;*/
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -3099,8 +3140,8 @@
         margin-right: 5px;
         border: 1px solid gray;
         grid-area: item-2;
-       /* background-color: #506cb8;*/
-       /* border-radius: 5px;*/
+        /* background-color: #506cb8;*/
+        /* border-radius: 5px;*/
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3125,52 +3166,52 @@
     .grid-container8 .div-3 {
         margin-top: 25px;
         grid-area: item-3;
-      /*  background-color: #a750b8;*/
+        /*  background-color: #a750b8;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    
-    .grid-container8 .div-3 img{
+
+    .grid-container8 .div-3 img {
         grid-area: item-3;
         /*  background-color: #a750b8;*/
-          border-radius: 5px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .grid-container8 .div-4 {
         margin-top: 25px;
         grid-area: item-4;
-      /*  background-color: #b85050;*/
+        /*  background-color: #b85050;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    
-    .grid-container8 .div-4 img{
+
+    .grid-container8 .div-4 img {
         grid-area: item-3;
         /*  background-color: #a750b8;*/
-          border-radius: 5px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .grid-container8 .div-5 {
         margin-top: 25px;
         margin-right: 15px;
         grid-area: item-5;
-       /* background-color: #f10505;*/
-       /* border-radius: 5px;*/
-       border:  1px solid gray;
+        /* background-color: #f10505;*/
+        /* border-radius: 5px;*/
+        border: 1px solid gray;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3205,7 +3246,7 @@
         border-radius: 25px;
         text-transform: capitalize;
     }
-  
+
     .div-5 button:hover {
         background-color: aliceblue;
         transition: 1s;
@@ -3216,7 +3257,7 @@
         margin-left: 125px;
         margin-bottom: 20px;
         grid-area: item-7;
-     /* background-color: #500dec;*/
+        /* background-color: #500dec;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3254,7 +3295,7 @@
     .grid-container9 .div-1 {
         margin-top: 20px;
         grid-area: item-1;
-       /* background-color: #9cb850;*/
+        /* background-color: #9cb850;*/
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -3272,7 +3313,7 @@
 
     .grid-container9 .div-2 {
         grid-area: item-2;
-       /* background-color: #dd9595;*/
+        /* background-color: #dd9595;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3295,7 +3336,7 @@
 
     .grid-container9 .div-3 {
         grid-area: item-3;
-     /*   background-color: #e722cd;*/
+        /*   background-color: #e722cd;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3318,7 +3359,7 @@
 
     .grid-container9 .div-4 {
         grid-area: item-4;
-       /* background-color: rgb(247, 46, 72);*/
+        /* background-color: rgb(247, 46, 72);*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3341,7 +3382,7 @@
 
     .grid-container9 .div-5 {
         grid-area: item-5;
-      /* background-color: brown;*/
+        /* background-color: brown;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3364,7 +3405,7 @@
 
     .grid-container9 .div-6 {
         grid-area: item-6;
-       /* background-color: rgb(102, 69, 190);*/
+        /* background-color: rgb(102, 69, 190);*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3408,7 +3449,7 @@
 
     .grid-container10 .div-1 {
         grid-area: item-1;
-       /* background-color: #9cb850;*/
+        /* background-color: #9cb850;*/
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -3428,7 +3469,7 @@
     .grid-container10 .div-2 {
         margin-right: 10px;
         grid-area: item-2;
-        border: 1px solid gray  ;
+        border: 1px solid gray;
         background-color: rgb(241, 221, 214);
         display: flex;
         flex-direction: column;
@@ -3436,11 +3477,11 @@
         max-width: 100%;
     }
 
-    #idioma{
+    #idioma {
         margin-left: 3px;
     }
 
-    .grid-container10 .div-2 img{
+    .grid-container10 .div-2 img {
         margin-left: 10px;
         border-radius: 5px;
     }
@@ -3531,7 +3572,7 @@
         margin-right: 10px;
         border: 1px solid gray;
         grid-area: item-3;
-       /* background-color: #b8509e;*/
+        /* background-color: #b8509e;*/
         display: flex;
         flex-direction: column;
         max-width: 100%;
@@ -3586,7 +3627,7 @@
         max-width: 100%;
     }
 
-    .grid-container10 .div-4 p{
+    .grid-container10 .div-4 p {
         margin: 10px;
         text-align: justify;
     }
@@ -3668,7 +3709,7 @@
         max-width: 100%;
     }
 
-    .grid-container11 .div-2 button{
+    .grid-container11 .div-2 button {
         margin-bottom: 10px;
         padding: 5px;
         color: black;
@@ -3679,7 +3720,7 @@
         text-transform: capitalize;
     }
 
-    .grid-container11 .div-2 button:hover{
+    .grid-container11 .div-2 button:hover {
         background-color: aliceblue;
         transition: 1s;
     }

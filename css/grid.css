@@ -874,6 +874,7 @@
             " item-2 item-3"
             " item-4 item-5"
         ;
+        column-gap: 10px;
     }
 
     .grid-container2 .div-2 {
